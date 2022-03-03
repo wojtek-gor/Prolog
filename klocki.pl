@@ -68,6 +68,16 @@ X = a,
 Y = d ;
 X = b,
 Y = d.
+Miêdzy jakimi klockami le¿y c
+*/
+/*
+?- miedzy(a,_,_).
+czy klocek a le¿y miêdzy jakimiœ klockami
+false.
+W oparciu o znane dane nie mo¿na 
+powiedzieæ, ¿e klocek a le¿y miêdzy
+jakimiœ klockami
+
 */
 
 
