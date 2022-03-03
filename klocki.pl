@@ -4,6 +4,7 @@
 na(c,a).
 na(c,b).
 na(d,c).
+pod(X,Y):-na(Y,X).
 /*
 Informacje o budowie:
 program sk³ada siê z 3 klauzul
