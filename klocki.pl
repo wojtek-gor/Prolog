@@ -4,11 +4,16 @@
 na(c,a).
 na(c,b).
 na(d,c).
+% 3 klauzule
 pod(X,Y):-na(Y,X).
+% regó³a: jeœli Y le¿y na X to znaczy ¿e X jest pod Y
+miedzy(X,Y,Z):-na(Y,X),na(X,Z).
+miedzy(X,Y,Z):-na(Z,X),na(X,Y).
+% regó³a: klocek X le¿y miêdzy Y i Z
 /*
 Informacje o budowie:
-program sk³ada siê z 3 klauzul
-Program zawiera 1 definicjê relacji
+program sk³ada siê z 6 klauzul
+Program zawiera 3 definicjê relacji
 */
 
 % ?- na(d,c).
@@ -43,6 +48,27 @@ Program zawiera 1 definicjê relacji
 % ?- na(_,c).
 % czy istnieje klocek le¿¹cy na c?
 % true.
+
+% ?- pod(a,c).
+% true;
+% false.
+/*
+?- miedzy(c,d,X).
+X = a ;
+X = b ;
+false.
+*/
+/*
+?- miedzy(c,X,Y).
+X = d,
+Y = a ;
+X = d,
+Y = b ;
+X = a,
+Y = d ;
+X = b,
+Y = d.
+*/
 
 
 
