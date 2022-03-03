@@ -39,6 +39,11 @@ Program zawiera 1 definicjê relacji
 % X=d,
 % Y=c.
 % pary klocków, takich ¿e X le¿y na Y.
+% ?- na(_,c).
+% czy istnieje klocek le¿¹cy na c?
+% true.
+
+
 
 
 
