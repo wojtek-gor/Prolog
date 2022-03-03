@@ -9,3 +9,15 @@ Informacje o budowie:
 program sk³ada siê z 3 klauzul
 Program zawiera 1 definicjê relacji
 */
+
+% ?- na(d,c).
+%true
+
+% ?- na(c,a).
+% true enter
+% b³¹d
+
+% ?- na(c,a).
+% true;
+% false.
+
