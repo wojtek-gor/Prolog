@@ -21,3 +21,25 @@ Program zawiera 1 definicjê relacji
 % true;
 % false.
 
+% ?- na(X,c).
+% jaki klocek le¿y na c
+% X = d.
+
+% ?- na(c,X).
+% na jakim klocku le¿y c
+% X = a;
+% X = b.
+% klocek c le¿y na a i b
+
+% ?- na(X,Y).
+% X=c,
+% Y=a;
+% X=c,
+% Y=b;
+% X=d,
+% Y=c.
+% pary klocków, takich ¿e X le¿y na Y.
+
+
+
+
