@@ -1,0 +1,41 @@
+?- fun(a,X,f(Y))=fun(V,h(Y,V),f(g(V))).
+X = h(g(a), a),
+Y = g(a),
+V = a.
+
+
+fu(a, X,f(g(Y)))
+fu(V,h(Z,V),f(V))
+V=a
+fu(a, X,f(g(Y)))
+fu(a,h(Z,a),f(a))
+X=h(Z,a)
+fu(a,h(Z,a),f(g(Y)))
+fu(a,h(Z,a),f(a))
+g(Y)!=a
+
+?- fu(a, X,f(g(Y)))=fu(V,h(Z,V),f(V)).
+false.
+
+
+fu(a,X,f(g(Y)))
+fu(Y,f(Z),f(Z))
+Y=a
+fu(a,X,f(g(a)))
+fu(a,f(Z),f(Z))
+X=f(Z)
+fu(a,f(Z),f(g(a)))
+fu(a,f(Z),f(Z))
+Z=g(a)
+fu(a,f(g(a)),f(g(a)))
+fu(a,f(g(a)),f(g(a)))
+
+?- fu(a,X,f(g(Y)))=fu(Y,f(Z),f(Z)).
+X = f(g(a)),
+Y = a,
+Z = g(a).
+
+ 
+
+
+
