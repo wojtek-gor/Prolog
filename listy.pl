@@ -70,5 +70,28 @@ odwrotna(l1,l2)
 spe³nione gdy lista l2 jest odwóceniem listy l1
 
 */
+odwrotna_lista([],[]).
 
+odwrotna_lista([H|T1],L):-odwrotna_lista(T1,T2),konkat(T2,[H],L).
 
+%predykaty
+%spe³niony, gdy X jest dodatni
+
+dodatni(X):-X>0.
+
+%spe³niony gdy wszystkie elementy listy s¹ dodatnie
+
+lista_dodatnia(L):-maplist(dodatni,L).
+
+kwadrat(X,Y):-X*X is Y.
+
+kwadrat_listy(X,Y):-maplist(kwadrat,X,Y).
+% wiekszy od lista
+wieksza(X,Y):- Y>X.
+wiekszy_od_listy(X,Y):-maplist(wieksza(X),Y).
+
+%wieksza lista[l1,l2]
+wieksza_lista(X,Y):-maplist(wieksza,X,Y).
+
+wieksza_5(X,Y):- Y is X+5.
+wieksza_o_5(X,Y):-maplist(wieksza_5,X,Y).
